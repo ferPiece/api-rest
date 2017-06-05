@@ -14,7 +14,7 @@ import java.util.List;
 @ApplicationScoped
 public class UserDao implements UserRepository {
 
-    @PersistenceContext
+    @PersistenceContext(unitName = "primary2")
     EntityManager em;
 
     @Override
